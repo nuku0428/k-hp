@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<title>Untitled Document</title>
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+
+
+
+#header {
+	color: #003333;
+	background-image: url(img/title.gif);
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	height: 130px;
+	text-indent: 45em;
+}
+#nav {
+	float: left;
+	margin-top: 0px;
+	margin-left: 10px;
+	padding-top: 15px;
+	list-style-type: none;
+	width: 220px;
+	background-color: #844848;
+	height: 545px;
+}
+#nav li {
+	list-style-type: none;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-left: 0px;
+	width: 210px;
+	height: 50px;
+	
+}
+#main {
+	width: 730px;
+	float: left;
+	background-color: #FFFFFF;
+}
+#topic {
+	font-size: x-small;
+	list-style-type: none;
+	padding-top: 0px;
+	margin-top: 0px;
+	background-color: #FFCCCC;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	height: 15px;
+}
+#topic li {
+	list-style-type: none;
+	display: inline;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+}
+ #topic a {
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 10px;
+	background-image: url(img/topic.gif);
+}
+#sc {
+	width: 445px;
+	height: 150px;
+	overflow: scroll;
+	float: left;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-left: 10px;
+	background-image: none;
+	margin-left: 10px;
+	color: #003300;
+	background-color: #F0FFCC;
+	text-indent: 1em;
+	
+}
+#sc td {
+	font-size: 90%;
+	line-height: 150%;
+	vertical-align: top;
+	padding: 5px;
+}
+#sub {
+	float: left;
+	margin-left: 15px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#all {
+	width: 970px;
+	background-color: #302B03;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#risu {
+	background-image: url(img/risu.gif);
+	background-repeat: no-repeat;
+	height: 230px;
+	width: 210px;
+	color: #FFFFFF;
+	text-indent: 55px;
+	clip: rect(390px,auto,auto,56px);
+	font-size: small;
+	margin-top: 50px;
+}
+
+#main h2 {
+	color: #001C1C;
+	text-align: left;
+	text-indent: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: #003333;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	background-image: url(img/new.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+#topic ol {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#all #footer {
+	text-align: right;
+	width: 945px;
+	clear: both;
+	margin-bottom: 0px;
+	color: #382810;
+	margin-top: 0px;
+	background-color: #D1A25A;
+	font-size: small;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-image: url(img/fotter-bg.gif);
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #003333;
+	height: 20px;
+}
+#all #content #main #box table {
+	border-top-style: dashed;
+	border-right-style: dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+	border-top-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 5px;
+	border-left-width: 5px;
+	border-top-color: #348483;
+	border-right-color: #3D8B8B;
+	border-bottom-color: #EBC296;
+	border-left-color: #4D9796;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+a:link {
+	color: #996600;
+}
+a:hover {
+	color: #669900;
+}
+#all #content #nav ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url(img/all-bg2.gif);
+	background-color: #666633;
+	background-repeat: repeat-x;
+    scrollbar-track-color:#d7efed;
+    scrollbar-face-color:#9bc1be;
+    scrollbar-shadow-color:#ffffff;
+
+
+ }
+body,td,th {
+	color: #003333;
+}
+a:visited {
+	color: #808040;
+}
+a:active {
+	color: #669900;
+}
+#ika {
+	height: 500px;
+	width: 500px;
+}
+#ika {
+	background-image: url(img/ika.gif);
+	background-repeat: no-repeat;
+	height: 460px;
+	width: 470px;
+	border: 5px solid #3E2900;
+	margin-top: 10px;
+}
+#ika {
+	text-align: center;
+}
+#ika p {
+	padding-top: 50px;
+	padding-left: 140px;
+	text-align: left;
+}
+#main h2 {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+h2 {
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #302B03;
+}
+#all #content #main h2 {
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #302B03;
+}a img {border-style:none;} 
+-->
+-->
+
+
+
+</style>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body onload="MM_preloadImages('img/btn-on-a.gif','img/btn-on-b.gif','img/btn-on-c.gif','img/btn-on-d.gif','img/btn-on-0.gif')">
+<center>
+<div id="all">
+  <div id="header"> Atsumi's portfolio  </div>
+  <div id="content"> 
+    <div id="nav">
+      <ul>
+	  <li><a href="index.html"><img src="img/btn-0.gif" alt="home" name="Image11" width="210" height="50" border="0" id="Image11" onmouseover="MM_swapImage('Image11','','img/btn-on-0.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li><a href="work.html"><img src="img/btn-a.gif" alt="work" name="Image1" width="210" height="50" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','img/btn-on-a.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li> <a href="profile.html"><img src="img/btn-b.gif" alt="Profile"  width="210" height="50" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','img/btn-on-b.gif',1)" onmouseout="MM_swapImgRestore()"
+ /></a></li>
+        <li><a href=#><img src="img/btn-c.gif" alt="e-mail"  width="210" height="50" id="Image3" onmouseover="MM_swapImage('Image3','','img/btn-on-c.gif',1)" onmouseout="MM_swapImgRestore()"
+ /></a></li>
+  <li><a href="#"><img src="img/btn-d.gif" alt="other" name="Image19" width="210" height="50" border="0" id="Image19" onmouseover="MM_swapImage('Image19','','img/btn-on-d.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+      </ul>
+   
+    </div>
+    <div id="main">
+      <div id="topic">
+        <ol>
+          <li>    <a href="index.html">HOME</a> </li>
+          <li>Other</li>
+          <li></li>
+        </ol>
+      </div>
+      <div id="ika">
+        
+          <p>「HEY!
+            YO!!<br />
+            なんもねぇYO!!<br />
+          待ってろYO!!」</p>
+        </div>
+      <h2>&nbsp;</h2>
+      </div>
+  </div>
+  <div id="footer">
+    <p>&#9728;Copyright&copy;atsumi-oowada All Rights Reserved</p>
+  </div>
+</div>
+</center>
+</body>
+</html>
